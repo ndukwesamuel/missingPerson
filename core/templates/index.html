@@ -4,18 +4,218 @@
 {% block content %}
 
 
+<link rel="stylesheet"  href="{% static 'css/chisom.css' %}">
+<section class="container-fluid">
+    <div class="row">
 
+        <div class="col-md-6 two">
+            <h1>
+                You don't need to act unconcerned untill it concerns you
+            </h1>
 
+        <p>
+            We serve  bridge that reunit missing persons to their families and loved ones.
+        </p>
 
+        <a class="img-link btn btn-danger" href="#">create a free account</a>
 
-    <form action="" method="post">
-        {% csrf_token %}
-        <input type="date" id="start" name="missing_date"
-       value="2020-07-22"
-       min="2018-01-01" max="2018-12-31">
+        </div>
 
-       <input type="submit" value="sub">
-    </form>
+        <div class="col-md-6 row-img">
+         
+            <img src="{% static 'images/landing.svg' %}" alt="">
+        </div>
+
+    </div>
+</section>
+
+<section class="whole">
+    <div class="row">
+        <div class="heading"><h1>Missing Persons</h1>
+            </div>
+              
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 five">
+            <div>
+            <img class="dennis" src="images/Dennis.png" alt="">
+            <h4>Dennis Estrada</h4>
+            <div class="wrt1">
+                <p>female </p>
+                <p>33 years old</p>
+                <p>22nd june 2020</p>
+    
+            </div>
+            <hr class="img-hr"></hr>
+            <a class="img-link btn btn-danger" href="#">show details</a>
+            
+        </div>  
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 six">
+            <div>
+            <img class="joe" src="images/joe.png" alt="">
+            <h4>Joe Guerrero</h4>
+            <div class="wrt1">
+                <p>male</p>
+                <p>23 years old</p>
+                <p>22nd june 2020</p>
+            </div>
+            <hr class="img-hr"></hr>
+            <a class="img-link btn btn-danger" href="#">show details</a>
+        </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 seven">
+            <div>
+            <img class="ethan" src="images/Ethan.png" alt="">
+            <h4>Ethan Elliot</h4>
+            <div class="wrt1">
+                <p>male</p>
+                <p>27 years old</p>
+                <p>22nd june 2020</p>
+             </div>
+             <hr class="img-hr"></hr>
+            <a class="img-link btn btn-danger" href="#">show details</a>
+             </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 eight">
+            <div>
+                
+            <img class="terry" src="images/terry.png" alt="">
+            <h4>Terry Barret</h4>
+            <div class="wrt1">
+                <p>male</p>
+                <p>27 years old</p>
+                <p>22nd june 2020</p>
+             </div>
+             <hr class="img-hr"></hr>
+             <a class="img-link btn btn-danger" href="#">show details</a>
+            </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 nine">
+            <img class="bobby" src="images/bobby.png" alt="">
+            <h4>Bobby Mendoza</h4>
+            <div class="wrt1">
+                <p>male</p>
+                <p>27 years old</p>
+                <p>22nd june 2020</p>
+             </div>
+             <hr class="img-hr"></hr>
+            <a class="img-link btn btn-danger" href="#">show details</a>
+        </div>
+        
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 ten">
+            <img class="anthony" src="images/anthony.png" alt="">
+            <h4>Anthony Green</h4>
+            <div class="wrt1">
+                <p>male</p>
+                <p>27 years old</p>
+                <p>22nd june 2020</p>
+             </div>
+             <hr class="img-hr"></hr>
+            <a class="img-link btn btn-danger" href="#">show details</a>      
+        </div>
+        <div class="see_more">
+            <button type="button"><h6>see more</h6></button>
+        </div>
+                
+</section>
+
+<section id="whole2">
+
+    <div class="row">
+        <div class="heading"><h1>Blog Post</h1>
+              </div>
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 five">
+            <div>
+                <h2>SLAVERY</h2>
+            <img class="dennis" src="images/Dennis.png" alt="">
+            <h4>Dennis Estrada</h4>
+            <div class="wrt1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut. </p>
+    
+            </div>
+            <span>read more</span>
+            
+        </div>  
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 six">
+            <div>
+                <h3>HUMAN TRAFFICKING</h3>
+            <img class="joe" src="images/joe.png" alt="">
+            <h4>Joe Guerrero</h4>
+            <div class="wrt1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut.</p>
+            </div>
+            <span>read more</span>
+        </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 seven">
+            <div>
+                <h3>CHILD'S LABOUR</h3>
+            <img class="ethan" src="images/Ethan.png" alt="">
+            <h4>Ethan Elliot</h4>
+            <div class="wrt1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut.</p>
+             </div>
+             <span>read more</span>
+             </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 eight">
+            <div>
+                <h3>HUMAN TRAFFICKING</h3>
+            <img class="terry" src="images/terry.png" alt="">
+            <h4>Terry Barret</h4>
+            <div class="wrt1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut.</p>
+             </div>
+             <span>read more</span>
+            </div>
+        </div>
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 nine">
+            <h3>FORCED LABOUR</h3>
+            <img class="bobby" src="images/bobby.png" alt="">
+            <h4>Bobby Mendoza</h4>
+            <div class="wrt1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut.
+                </p>
+             </div>
+             <span>read more</span>
+        </div>
+        
+    
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 ten">
+            <h3>FORCED PROSTITUTION</h3>
+            <img class="anthony" src="images/anthony.png" alt="">
+            <h4>Anthony Green</h4>
+            <div class="wrt1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum repellat 
+                    consequuntur commodi eaque quia excepturi molestiae minima voluptatum adipisci? 
+                    Maxime illo dicta laudantium sapiente voluptate aliquam saepe inventore aut.</p>
+             </div>
+            <span>read more</span>
+                
+        </div>
+        </div>        
+
+</section>
 
 
 {% endblock %}

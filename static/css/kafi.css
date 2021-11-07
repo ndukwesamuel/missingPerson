@@ -1,0 +1,202 @@
+/* page 2 */
+body{
+    background-color: rgb(219, 219, 219);
+/* .account{
+    background-color: red;
+    margin-top: 5%;
+    margin-left: 100px ;
+    margin-right: 100px;
+    padding: 20px 0px;
+    max-width: 380px;
+    
+} */
+
+
+/* page 2 */
+}
+.account{
+    background-color: white;
+    margin-top: 5%;
+    max-width: 380px;
+    padding: 20px 0;
+    border-radius: 5px;
+    
+} 
+.account > h3{
+    text-align: center;
+}
+.account > p {
+    text-align: center;
+}
+.p01 {
+    text-align: center;
+}
+
+.account form{
+    padding-left: 20px;
+}
+
+.account form > input {
+    width: 20em;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid black;
+        
+}
+
+.submit {
+    width: 20.2em;
+    height: 40px;
+    border-radius: 3px;
+    border: 0 solid black;
+    margin-top: 10px;
+    color: white;
+    background: red; 
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+/* page 3 */
+
+.close{
+    width: 0px;
+    border: 0 none inherit;
+}
+
+
+
+.submit_1{
+
+    width: 20.2em;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid red;
+    margin-top: 10px;
+    color: red;
+    background: white;
+    margin-left: 5%;
+  
+    
+}
+
+/* page 3 */
+
+.account_1{
+    justify-content: center;
+}
+
+.account_1 > .close{
+    margin-left: 20em;
+}
+
+
+.account_2{
+    background-color: white;
+    max-width: 380px;
+    border-radius: 5px;
+    padding: 30px 0;
+}
+
+
+.account_2 > p {
+    text-align: center;
+}
+
+
+/* page 4 */
+.account_3{
+
+    background-color: white;
+    margin-top: 5%;
+    max-width: 380px;
+    padding: 20px 0;
+    border-radius: 5px;
+
+}
+.account_3 form > input {
+    width: 20em;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid black;
+    
+}
+
+.account_3 > h4   {
+    text-align: center;
+}
+
+.account_3 > p {
+    text-align: center;
+}
+
+.account_3 form{
+    padding-left: 20px;
+}
+.account_3 form > input {
+    width: 20em;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid black;
+    
+}
+.sub{
+    
+    width: 6.5em;
+    height: 40px;
+    border-radius: 3px;
+    border: 0 solid red;
+    margin-top: 10px;
+    color: white;
+    background: red; 
+}
+
+.submit_2{
+
+    width: 20.2em;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid red;
+    margin-top: 10px;
+    color: red;
+    background: white;
+    
+}
+.or{
+    text-align: center;
+}
+
+/* page 5 */
+
+.account_4{
+    background-color: white;
+    margin-top: 5%;
+    max-width: 380px;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.account_4 form{
+    padding-left: 20px;
+}
+
+.account_4 form > input {
+    width: 20em;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid black;
+        
+}
+
+/* page 6 */
+
+
+.account_51{
+    background-color: white;
+    margin-top: 5%;
+    max-width: 380px;
+    padding: 20px 0;
+    border-radius: 5px;
+    
+}
