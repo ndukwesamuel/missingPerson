@@ -1,0 +1,203 @@
+page one =>  {
+    Landing page    path('', HometView.as_view(), name='home'),
+    frontend no complete
+}
+
+page two => {
+    signIUP
+        path('SignupView/', SignupView.as_view(), name='SignupView'),
+          frontend no complete
+}
+
+
+page 3 => {
+        sucesss post
+}
+
+
+page 4   => {
+        login post
+            path('login/', LoginView.as_view(), name='login'),
+}
+
+page 5{
+        path('reset-password/', PasswordResetView.as_view(), name='reset-password'),
+}
+
+
+page 6{
+
+    succesful reste
+        path('password-reset-done/', PasswordResetDoneView.as_view(), name='password_reset_done'),
+    path('password-reset-confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+    path('password-reset-complete/', PasswordResetCompleteView.as_view(), name='password_reset_complete'),
+}
+
+
+page 7{
+    How it works
+}
+
+
+page 8{
+        Contact
+    http://127.0.0.1:8000/Contact/
+        path('Contact/', Contact.as_view(), name='Contact'),
+}
+
+
+page 9{
+
+    Complaints
+        path('Complaints/', Complaints.as_view(), name='Complaints'),
+}
+
+
+page 10{
+            missing_person
+            path('missing_person/', missing_person.as_view(), name='missing_person'),
+}
+
+
+page 11 {
+    about us
+    
+    path('about/', AboutView.as_view(), name='about'),
+
+}
+
+
+page 12{
+    found people
+
+
+}
+
+page 13{
+    modal for page 12
+    
+}
+
+
+page 14{
+
+    Blog Post
+    
+}
+
+page 15{
+
+    Blog detail
+    
+}
+
+
+page 16{
+
+    missing person
+    
+}
+
+page 17{
+
+    missing person modla
+    
+}
+
+
+
+page 18{
+
+    privacy policey
+    
+}
+
+page 19{
+
+    term of use
+    
+}
+page 20 done == >{
+    path('AdminDashboard/', AdminDashboard.as_view(), name='AdminDashboard'),
+    }
+
+page 21 done => {
+    path('Admin_Missing_People_Report_all/', Admin_Missing_People_Report_all.as_view(), name='Admin_Missing_People_Report_all'), }
+
+
+22{ this is a modla }
+
+page 23 =>{    path('Admin_Missing_People_Report_active/', Admin_Missing_People_Report_active.as_view(), name='Admin_Missing_People_Report_active'),}
+
+page 24 => {    path('Admin_Missing_People_Report_Pending/', Admin_Missing_People_Report_Pending.as_view(), name='Admin_Missing_People_Report_Pending'), }
+
+page 25 =>{
+
+        path('Admin_Missing_People_Report_Pending/', Admin_Missing_People_Report_Pending.as_view(), name='Admin_Missing_People_Report_Pending'), 
+
+}
+
+page 26 => {
+
+    path('All_user_list/', All_user_list.as_view(), name='All_user_list'), 
+    
+}
+
+page 27 =>{
+    path('AdminUpdate/', AdminUpdate.as_view(), name='AdminUpdate'),    
+}
+
+page 28 => {
+    
+    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='password_change.html'), 
+        name='password_change'),
+}
+
+page 29 => {
+    
+    path('password_change/done/', auth_views.PasswordChangeDoneView.as_view(template_name='password_change_done.html'), 
+        name='password_change_done'),
+}
+
+
+
+page 30 => {
+    Blog List
+    path('', Bloglist.as_view(), name='blog'),
+}
+
+
+page 31 => {
+    create blog
+    path('create/', CreateBlog.as_view(), name='create'),
+}
+
+page 32{
+    was not surpose to be 
+
+}
+
+page 33{
+
+
+    
+    path('Enquiries_message/', Enquiries_message.as_view(), name='Enquiries_message'), 
+    
+
+}
+
+page 34{
+
+
+    path('Emergency/', EmergencyView.as_view(), name='Emergency'),  
+
+}
+
+page 35 {
+    is the filter form  for Enquiries_message
+}
+
+page 36{
+    user dashbord
+}
+

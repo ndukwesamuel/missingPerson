@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+<link rel="stylesheet"  href="{% static 'css/stan.css' %}">
+
+<section>
+  <div class="about_us">
+    <h1>Terms Of Use</h1>
+    <div class="underline">
+      <!-- underline goes here -->
+    </div>
+    <p>We care about the safety and return of missing family members.</p>
+  </div>
+
+  <div class="standing_man_container">
+    <div class="standing_man_img">
+      <img
+        src="{% static 'images/terms' %}.svg"
+        alt="standing man"
+      />
+    </div>
+    <div class="standing_man_text">
+      <p>
+        Missingperson.com.ng provide a platform where the public can
+        upload missing people and also check regularly to take note of
+        faces incase they come across any.This platform has been created
+        to help tackle the issue of missing people in the nation. This is
+        a serious situation in which the crushing effect can have a long
+        lasting damaging effect on any family.
+      </p>
+
+      <p>
+        For this reason, we want our users to be responsible enough to
+        know the delicate nature of their actions by not just posting out
+        of panick or to prank but to post only real cases of missing
+        people.
+      </p>
+      <p>
+        Many children have been traded and uploading them here can help
+        reunite them to their parents. We are not promising that we will
+        find any missing person but our platform is a hub which makes it
+        easier for a wider reach and a higher chance of sombody coming
+        across any known face.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}

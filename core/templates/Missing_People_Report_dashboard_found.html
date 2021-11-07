@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+        {% for i in all_people %}
+               <div style="display: flex; justify-content:space-evenly;">
+
+                <div><img src="{{i.missing_image.url}}" alt="" width="50px"></div>
+                <p>{{i.id}}</p>
+
+                <div>   <p>{{i.missing_firstname}}   {{i.missing_lastname}}   </p></div>
+                <div> <p>{{i.missing_sex}}</p></div>
+
+                <div> <p>{{i.missing_date}}</p> </div>
+                
+                <div> <p>{{i.status}}</p> </div>
+
+                
+        
+               </div>
+        {% endfor%}
+  
+               
+  </div>
+
+
+  <h1>saj</h1>
+
+  {% endblock %}

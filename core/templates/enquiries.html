@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+
+<link rel="stylesheet"  href="{% static 'css/tope_style.css' %}">  
+
+
+{% include 'contact_navbar.html' %}
+
+      <div class="container">
+        <form method="post" class="form">
+          {% csrf_token %}
+          <h2 class="form__header">Make an Enquiry or Request</h2>
+          <div class="form__row">
+            <div class="form__item">
+              <label><b>First Name</b></label>
+              <input type="text" name="First_Name" value="" placeholder="Enter your first name">
+            </div>
+
+            <div class="form__item">
+              <label><b>Last Name</b></label>
+              <input type="text" name="Last_Name" placeholder="Enter your last name">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__item">
+              <label><b>Email</b></label>
+              <input type="email" name="Email" placeholder="Enter your email address">
+            </div>
+
+            <div class="form__item">
+              <label><b>Subject</b></label>
+              <input type="text" name="Subject" placeholder="Enter your message subject here">
+            </div>
+          </div>
+
+          <div class="form__item">
+              <label><b>Subject</b></label>
+              <textarea id="message" name="message_text" placeholder="Enter your message here"></textarea>
+          </div>
+
+
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    {% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+
+
+<link rel="stylesheet"  href="{% static 'css/tope_style.css' %}">   
+   <main>
+    {% include 'contact_navbar.html' %}
+
+
+      <div class="container">
+        <form class="form" method="post">
+          {% csrf_token %}
+          <h2 class="form__header">Make a complaint</h2>
+          <p class="sub__text">Need to make a complaint about an event you’ve already reported on our platform? Fill in this form.</p>
+          <div class="form__row">
+            <div class="form__item">
+              <label><b>First Name</b></label>
+              <input type="text" name="First_Name" placeholder="Enter your first name">
+            </div>
+
+            <div class="form__item">
+              <label><b>Last Name</b></label>
+              <input type="text" name="Last_Name" placeholder="Enter your last name">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__item">
+              <label><b>Email</b></label>
+              <input type="email" name="Email" placeholder="Enter your email address">
+            </div>
+
+            <div class="form__item">
+              <label><b>Subject</b></label>
+              <input type="text" name="Subject"  placeholder="Enter your complaint subject here">
+            </div>
+          </div>
+
+          <div class="form__item">
+              <label><b>Message</b></label>
+              <textarea id="message" name="message_text"   placeholder="Enter your message here"></textarea>
+          </div>
+
+          <button type="submit"> Submit</button>
+        </form>
+      </div>
+    </main>
+    {% endblock %}

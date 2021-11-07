@@ -1,0 +1,14 @@
+{% load static%}
+<div class="container text-center">
+    <h1 class="form__title">Contact Us</h1>
+    <h3 class="form__subtitle">Contact us via email or through the form below</h3>
+    <div class="btn__group">
+      <a href="{% url 'core:Contact'%}"><button class="btn">Enquiries & Request</button></a>
+      <a href="{% url 'core:Complaints'%}"><button class="btn ">Complaints Form</button></a>
+      <a href="{% url 'core:missing_person'%}"><button class="btn">Seen a Missing Person</button></a>
+    </div>
+  </div>
+
+  <!-- path('Complaints/', Complaints.as_view(), name='Complaints'),
+  path('Contact/', Contact.as_view(), name='Contact'),
+  path('missing_person/', missing_person.as_view(), name='missing_person'), -->

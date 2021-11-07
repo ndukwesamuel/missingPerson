@@ -1,0 +1,148 @@
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .about_us {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .underline {
+    background-color: red;
+    width: 65px;
+    height: 6px;
+    margin-left: 35rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .standing_man_container {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    height: 490px;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    margin: 100px 80px;
+    padding: 40px 80px;
+  }
+  .standing_man_img {
+    padding: 40px 50px;
+  }
+  .red_bg_footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2545b;
+    color: #fff;
+    padding: 20px 120px;
+    height: 230px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  /* stanly  privacy css start here*/
+  
+  
+  .about_us {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .underline {
+    background-color: red;
+    width: 65px;
+    height: 6px;
+    margin-left: 35rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .standing_man_container {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    height: 550px;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    margin: 100px 80px;
+    padding: 40px 80px;
+  }
+  .standing_man_img {
+    padding: 40px 50px;
+  }
+  .red_bg_footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2545b;
+    color: #fff;
+    padding: 20px 120px;
+    height: 230px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  
+  /* terms */
+
+
+  /* my css */
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .about_us {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .underline {
+    background-color: red;
+    width: 65px;
+    height: 6px;
+    margin-left: 35rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .standing_man_container {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    height: 550px;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    margin: 100px 80px;
+    padding: 40px 80px;
+  }
+  .standing_man_img {
+    padding: 40px 50px;
+  }
+  .red_bg_footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2545b;
+    color: #fff;
+    padding: 20px 120px;
+    height: 230px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+  

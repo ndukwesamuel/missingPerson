@@ -1,0 +1,32 @@
+
+<style>
+    input{
+        display: block;
+       
+        margin: auto;
+        margin-bottom: 2em;
+    }
+</style>
+<div class="max-w-lg mx-auto">
+    <form method="post" class="mt-5">
+        {% csrf_token %}
+        <input type="text" name="email" id="" placeholder="Email">
+        <input type="text" name="full_name" id="" placeholder="Full Name">
+        <input type="tel" name="phone" id="" placeholder="Phone Number">
+        <input type="password" name="password1" id="" placeholder="Enter Password">
+        <input type="password" name="password2" id="" placeholder="Enter again">
+        <button type="submit"> submit</button>
+        <a class="hover:text-blue-500" href="{% url 'login' %}">Already have an account?</a> 
+        
+    </div>
+</div>
+
+
+
+{% if messages %}
+{% for message in messages %}
+    <div class="text-center alert alert-{{ message.tags }}">
+        {{ message|safe }}
+    </div>
+{% endfor %}
+{% endif %}

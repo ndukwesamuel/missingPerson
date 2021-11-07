@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+  
+
+    {{request.user}}
+
+    {% for blog in blogs %}
+
+    <p>{{blog.Body|slice:":100"}}</p>
+    <div>
+        <img src="{{blog.blog_img.url}}" alt="" width="30px">
+    </div>
+
+    <p>{{blog.created_at}}</p>
+    <p>{{blog.updated_at}}</p>
+
+    <h2>{{blog.Title}}</h2>
+
+    {% endfor %}
+    
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+
+  <link rel="stylesheet"  href="{% static 'css/stan.css' %}">
+
+    <main>
+      <!-- section_1 -->
+      <section>
+        <div class="about_us">
+          <h1>About Us</h1>
+          <div class="underline">
+            <!-- underline goes here -->
+          </div>
+          <p>We care about the safety and return of missing family members.</p>
+        </div>
+
+        <div class="standing_man_container">
+          <div class="standing_man_img">
+            <img src="{% static 'images/Group 68309.svg'%}" alt=" new" />
+          </div>
+          <div class="standing_man_text">
+            <p>
+              Numerous media has been used to anounce to the public about
+              missing people such as local news papers, social media platforms
+              as well aspictures posted within the locality of the missing
+              people.
+            </p>
+
+            <p>
+              Missingpersong.com.ng a proper hub has been well thought of to
+              help tackle the issue of missing people bybcreating a platform
+              that is totally free, where the public can see and recognise
+              missing people and reunite them with their families.
+            </p>
+            <p>
+              All these good ways the public can help get missing people
+              reunited to their families but do not offer a major huib tyhat
+              people can visit every now and then to see missing people and to
+              post missing people to the public.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}
