@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uwhj7-xq+n=y2zkkx0)78)xsoot7wqheau-9b@_9euf&ewx=o+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['missingperson2.herokuapp.com', '127.0.0.1']
 
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # During development only
@@ -40,10 +40,6 @@ if DEBUG:
 # Application definition
 
 # settings.py
-
-
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -62,6 +58,7 @@ AUTH_USER_MODEL = "users_app.NewUser"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -156,6 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = '/login'
 LOGOUT_REDIRECT_URL = "/"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
