@@ -3,10 +3,8 @@ from .views import (
     HometView, AboutView, Privacy, Terms, Complaints,
     Contact, missing_person,AdminDashboard,Admin_Missing_People_Report_all,
     Admin_Missing_People_Report_active, Admin_Missing_People_Report_found, Admin_Missing_People_Report_Pending,
-    All_user_list, Create_missing_person,AdminUpdate,Enquiries_message,UserDashboard,
+    All_user_list, Create_missing_person,AdminUpdate,Enquiries_message,
     EmergencyView, Howitwork, Found_people, Blogview, BlogDetail, Missing_people
-     # UserDashboard,
-    # Missing_People_Report
 )
 
 
@@ -51,5 +49,5 @@ urlpatterns = [
 
     # for UserDashboard 
 
-    path('UserDashboard/', UserDashboard.as_view(), name='UserDashboard'),  
+    # path('UserDashboard/', UserDashboard.as_view(), name='UserDashboard'),  
 ]

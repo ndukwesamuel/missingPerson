@@ -37,6 +37,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',  include('core.urls', namespace="core")),
+    path('userdash/',  include('UserDashboard.urls', namespace="userdashboard")),
     path('blog/',  include('BLOG.urls', namespace="blog")),
     path('login/', LoginView.as_view(), name='login'),
     path('signup/', SignupView.as_view(), name='SignupView'),
@@ -58,5 +59,8 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

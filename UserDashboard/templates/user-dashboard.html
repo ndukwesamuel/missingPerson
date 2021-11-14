@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/user-dashboard.css' %}">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="sidebar-space">LOGO</div>
+        <nav>
+            <div class="nav-icons">
+                <div class="nav-search">
+                    <input type="text">
+                    <i class="fas fa-search"></i>
+                </div>
+                <i class="fas fa-bell"></i>
+            </div>
+        </nav>
+        <div class="sidebar-space"></div>
+    </header>
+
+    <main>
+
+        {% include 'aside_nav.html' %}
+
+        <section class="main__section">
+            <h1 class="heading__1">Dashboard</h1>
+            <div class="boxes">
+                <div class="row__1">
+                    <a href="missing-people.html" class="box-1 box">
+                        <p>Total Report</p>
+                        <div class="underline"></div>
+                        <h1>19</h1>
+                    </a>
+                    <a class="box-2 box">
+                        <p>Active Report</p>
+                        <div class="underline"></div>
+                        <h1>15</h1>
+                    </a>
+                    <a class="box-3 box">
+                        <p>Found Report</p>
+                        <div class="underline"></div>
+                        <h1>5</h1>
+                    </a>
+                    <a class="box-4 box">
+                        <p>Pending Report</p>
+                        <div class="underline"></div>
+                        <h1>0</h1>
+                    </a>
+                </div>
+            </div>
+
+            <h3 class="heading__2">Complaints & Emergency Request</h3>
+            <div class="boxes-2">
+                <div class="row__1">
+                    <a class="box-5 box">
+                        <p>Total Complaints</p>
+                        <div class="underline"></div>
+                        <h1>0</h1>
+                    </a>
+                    <a class="box-6 box">
+                        <p>Total Emergency</p>
+                        <div class="underline"></div>
+                        <h1>0</h1>
+                    </a>
+                    <a class="box-7 box">
+                        <p>Total Enquiries Made</p>
+                        <div class="underline"></div>
+                        <h1>10</h1>
+                    </a>
+                </div>
+            </div>
+
+            <section class="activity__log">
+                <div class="table">
+                    <div class="tb-row tb-row-header">
+                        <h1>Activity Log</h1>
+                    </div>
+
+                    <div class="tb-row">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+
+                    <div class="tb-row">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+
+                    <div class="tb-row">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+
+                    <div class="tb-row">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+
+                    <div class="tb-row">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+
+                    <div class="tb-row tb-row-footer">
+                        <img src="/assets/Olaitan.png" alt="">
+                        <p>Lorem, ipsum.</p>
+                        <p>Declared Missing</p>
+                        <p>22nd June, 2021</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'users_app',
     'core',
-    "BLOG"
+    "BLOG",
+    'UserDashboard'
+
 ]
 
 AUTH_USER_MODEL = "users_app.NewUser"

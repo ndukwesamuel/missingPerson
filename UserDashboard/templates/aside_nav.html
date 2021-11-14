@@ -1,0 +1,48 @@
+{% load static %}
+
+<aside>
+    <ul>
+        <li class="active">
+            <div class="sidebar-icon">
+                <img src="{% static 'images/dashboard/Icon material-dashboard.svg'%}">
+            </div>
+            Dashboard
+        </li>
+
+        <li>
+            <a href="total-report.html" class="sidebar-icon">
+                <img src="{% static 'images/dashboard/bar-graph.svg'%}">
+            </a>
+            <a href="total-report.html">Report</a>
+        </li>
+
+        <li>
+            <div class="sidebar-icon">
+                <img src="{% static 'images/dashboard/multiple-users-silhouette.svg'%}">
+            </div>
+            Users
+        </li>
+
+        <li>
+            <div class="sidebar-icon">
+                <img src=" {% static 'images/dashboard/Group 68502.svg'%}
+                ">
+            </div>
+            Blog
+        </li>
+
+        <li>
+            <div class="sidebar-icon">
+                <img src="{% static 'images/dashboard/settings.svg'%}">
+            </div>
+            Account Settings
+        </li>
+
+        <li class="logout">
+            <div class="sidebar-icon">
+                <i class="fas fa-logout"></i>
+            </div>
+            Log Out
+        </li>
+    </ul>
+</aside>
