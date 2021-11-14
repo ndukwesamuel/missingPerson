@@ -2,43 +2,30 @@
 {% load static%}
 
 {% block content %}
-<!-- <div class="max-w-lg mx-auto">
-     
-        <input type="text" name="email" id="" placeholder="Email">
-        <input type="text" name="full_name" id="" placeholder="Full Name">
-        <input type="tel" name="phone" id="" placeholder="Phone Number">
-        <input type="password" name="password1" id="" placeholder="Enter Password">
-        <input type="password" name="password2" id="" placeholder="Enter again">
-        <button type="submit"> submit</button>
-        <a class="hover:text-blue-500" href="{% url 'login' %}">Already have an account?</a> 
-        
-    </div>
-</div> -->
+<link rel="stylesheet" href="{% static 'css/kafilat_sign_login.css'%}">
 
-<link rel="stylesheet" href="{% static 'css/kafi.css'%}">
 
 <div class="main.account" >
     <div class="account">
-    <h3>Create Account</h3>
+    <h4>Create Account</h4>
     <p class="p" >Register to get access to missing persons</p>
-    <form method="post">
+    <form action="" method="POST">
         {% csrf_token %}
-        <label for="Full_Name">Full Name</label><br>
-        <input type="text" name="full_name" id="Full_Name" placeholder="Enter your full name"  required><br> <br>
+        <label for="Full Name">Full Name</label><br>
+        <input type="text" name="full_name" id="Full Name" placeholder="Enter your full name"  required><br> <br>
         <label for="Email">Email</label><br>
-        <input type="email" name="email" id="Email" placeholder="Enter your email address" required><br> <br>
+        <input type="text" name="email" id="Email" placeholder="Enter your email address" required><br> <br>
         <label for="Phone Number">Phone Number</label><br>
         <input type="number" name="phone" id="Phone Number" placeholder="Enter your phone number"><br><br>
         <label for="">Password </label><br>       
         <input type="password" name="password1" id="Password" placeholder="Enter your password" required><br> <br>
 
         <label for="">Password </label><br>       
-        <input type="password" name="password2" id="Password2" placeholder="Enter your password" required><br> <br>
-
+        <input type="password" name="password2" id="Password" placeholder="Enter your password" required><br> <br>
         <button class="submit">Create Account</button>
     </form>
     </div>
-    <p class="p01">Already have an account ? <a href="{% url 'login' %}">Login</a> </p>
+    <p class="p01">Already have an account ? <a class="a1" href="{% url 'login' %}">sign in</a> </p>
     
 </div>
 
